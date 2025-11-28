@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilled Atlantic Salmon | Chef Davs</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Chef Davs</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">3</span>
+                </a>
+                <a href="../auth/login.html" class="btn-login">Sign In</a>
+                <a href="profile.html" class="profile-icon">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="menu.html">Menu</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Grilled Atlantic Salmon</span>
+        </div>
+    </nav>
+
+    <!-- Product Showcase -->
+    <section class="product-section">
+        <div class="product-container">
+            <!-- Product Images -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=500&fit=crop" alt="Grilled Atlantic Salmon">
+                    <span class="product-badge">Chef's Pick</span>
+                </div>
+                <div class="thumbnail-gallery">
+                    <div class="thumbnail active">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=150&h=120&fit=crop" alt="Salmon View 1">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=150&h=120&fit=crop" alt="Salmon View 2">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1485921325833-c519f76c4927?w=150&h=120&fit=crop" alt="Salmon View 3">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=150&h=120&fit=crop" alt="Salmon View 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <div class="product-category">Seafood • Main Course</div>
+                <h1>Grilled Atlantic Salmon</h1>
+                
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span class="rating-text">4.9 (128 reviews)</span>
+                </div>
+
+                <p class="product-description">
+                    Experience the finest Atlantic salmon, expertly grilled to perfection. Served with herb-infused butter, seasonal roasted vegetables, and a delicate lemon dill sauce. Each fillet is sustainably sourced and prepared fresh daily by our master chefs.
+                </p>
+
+                <div class="product-price">
+                    <span class="current-price">$28.99</span>
+                    <span class="original-price">$34.99</span>
+                    <span class="discount-badge">17% OFF</span>
+                </div>
+
+                <div class="product-options">
+                    <div class="option-group">
+                        <label>Portion Size</label>
+                        <div class="option-buttons">
+                            <button class="option-btn">Regular (200g)</button>
+                            <button class="option-btn active">Large (300g)</button>
+                            <button class="option-btn">Family (500g)</button>
+                        </div>
+                    </div>
+
+                    <div class="option-group">
+                        <label>Cooking Preference</label>
+                        <div class="option-buttons">
+                            <button class="option-btn">Medium Rare</button>
+                            <button class="option-btn active">Medium</button>
+                            <button class="option-btn">Well Done</button>
+                        </div>
+                    </div>
+
+                    <div class="option-group">
+                        <label>Add-ons</label>
+                        <div class="addon-list">
+                            <label class="addon-item">
+                                <input type="checkbox">
+                                <span class="addon-name">Extra Herb Butter</span>
+                                <span class="addon-price">+$2.99</span>
+                            </label>
+                            <label class="addon-item">
+                                <input type="checkbox">
+                                <span class="addon-name">Garlic Mashed Potatoes</span>
+                                <span class="addon-price">+$4.99</span>
+                            </label>
+                            <label class="addon-item">
+                                <input type="checkbox">
+                                <span class="addon-name">Steamed Asparagus</span>
+                                <span class="addon-price">+$3.99</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add to Cart Section -->
+                <div class="cart-section">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <span class="qty-value">1</span>
+                        <button class="qty-btn plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <button class="add-to-cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Add to Cart — $28.99
+                    </button>
+                </div>
+
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Prep Time: 15-20 mins</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                        <span>450 calories</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Gluten-Free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition & Ingredients -->
+    <section class="nutrition-section">
+        <div class="nutrition-container">
+            <div class="nutrition-card">
+                <h2><i class="fa-solid fa-chart-pie"></i> Nutrition Facts</h2>
+                <p class="nutrition-intro">Per serving (300g)</p>
+                <div class="nutrition-grid">
+                    <div class="nutrition-item">
+                        <div class="nutrition-circle">
+                            <span class="nutrition-value">450</span>
+                            <span class="nutrition-unit">kcal</span>
+                        </div>
+                        <span class="nutrition-label">Calories</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <div class="nutrition-circle">
+                            <span class="nutrition-value">42</span>
+                            <span class="nutrition-unit">g</span>
+                        </div>
+                        <span class="nutrition-label">Protein</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <div class="nutrition-circle">
+                            <span class="nutrition-value">28</span>
+                            <span class="nutrition-unit">g</span>
+                        </div>
+                        <span class="nutrition-label">Fat</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <div class="nutrition-circle">
+                            <span class="nutrition-value">8</span>
+                            <span class="nutrition-unit">g</span>
+                        </div>
+                        <span class="nutrition-label">Carbs</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredients-card">
+                <h2><i class="fa-solid fa-list-check"></i> Fresh Ingredients</h2>
+                <p class="ingredients-intro">All ingredients are locally sourced and organic</p>
+                <ul class="ingredients-list">
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Fresh Atlantic Salmon Fillet</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Organic Herb Butter (Rosemary, Thyme)</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Fresh Lemon & Dill Sauce</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Seasonal Roasted Vegetables</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Extra Virgin Olive Oil</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Sea Salt & Black Pepper</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Fresh Garlic & Shallots</span>
+                    </li>
+                </ul>
+                <div class="allergen-info">
+                    <h4><i class="fa-solid fa-triangle-exclamation"></i> Allergen Information</h4>
+                    <p>Contains: Fish, Dairy. May contain traces of nuts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews-section">
+        <div class="reviews-container">
+            <div class="section-header">
+                <h2>Customer <span class="highlight">Reviews</span></h2>
+                <p>What our guests say about this dish</p>
+            </div>
+
+            <div class="reviews-summary">
+                <div class="rating-overview">
+                    <div class="rating-big">
+                        <span class="rating-number">4.9</span>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="rating-count">Based on 128 reviews</span>
+                    </div>
+                </div>
+                <div class="rating-bars">
+                    <div class="bar-row">
+                        <span>5 stars</span>
+                        <div class="bar"><div class="bar-fill" style="width: 85%"></div></div>
+                        <span>108</span>
+                    </div>
+                    <div class="bar-row">
+                        <span>4 stars</span>
+                        <div class="bar"><div class="bar-fill" style="width: 12%"></div></div>
+                        <span>15</span>
+                    </div>
+                    <div class="bar-row">
+                        <span>3 stars</span>
+                        <div class="bar"><div class="bar-fill" style="width: 3%"></div></div>
+                        <span>4</span>
+                    </div>
+                    <div class="bar-row">
+                        <span>2 stars</span>
+                        <div class="bar"><div class="bar-fill" style="width: 1%"></div></div>
+                        <span>1</span>
+                    </div>
+                    <div class="bar-row">
+                        <span>1 star</span>
+                        <div class="bar"><div class="bar-fill" style="width: 0%"></div></div>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop" alt="Sarah M.">
+                        <div class="reviewer-info">
+                            <h4>Sarah Mitchell</h4>
+                            <div class="review-meta">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="review-date">Nov 15, 2024</span>
+                            </div>
+                        </div>
+                        <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                    </div>
+                    <p class="review-text">"Absolutely divine! The salmon was cooked to perfection — crispy skin on the outside, moist and flaky inside. The herb butter elevated it to another level. Will definitely order again!"</p>
+                    <div class="review-images">
+                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100&h=80&fit=crop" alt="Review photo">
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="James W.">
+                        <div class="reviewer-info">
+                            <h4>James Wilson</h4>
+                            <div class="review-meta">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="review-date">Nov 12, 2024</span>
+                            </div>
+                        </div>
+                        <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                    </div>
+                    <p class="review-text">"Best salmon I've had in years! The portion size was generous and the presentation was beautiful. The lemon dill sauce complemented the fish perfectly."</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="Emily R.">
+                        <div class="reviewer-info">
+                            <h4>Emily Roberts</h4>
+                            <div class="review-meta">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span class="review-date">Nov 10, 2024</span>
+                            </div>
+                        </div>
+                        <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                    </div>
+                    <p class="review-text">"Great quality and taste! The only reason for 4 stars is I wish there were more vegetables. But the salmon itself was exceptional — fresh and perfectly seasoned."</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggested Meals -->
+    <section class="suggested-section">
+        <div class="suggested-container">
+            <div class="section-header">
+                <h2>You May Also <span class="highlight">Like</span></h2>
+                <p>Complement your meal with these popular dishes</p>
+            </div>
+
+            <div class="suggested-gallery">
+                <article class="suggested-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=300&h=220&fit=crop" alt="Garlic Butter Prawns">
+                    </div>
+                    <div class="card-content">
+                        <h3>Garlic Butter Prawns</h3>
+                        <p>Jumbo prawns in herb butter</p>
+                        <div class="card-footer">
+                            <span class="price">$32.99</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="suggested-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1608039829572-f79f22b7eb36?w=300&h=220&fit=crop" alt="Lobster Bisque">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lobster Bisque</h3>
+                        <p>Creamy lobster soup</p>
+                        <div class="card-footer">
+                            <span class="price">$18.99</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="suggested-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=220&fit=crop" alt="Garden Buddha Bowl">
+                    </div>
+                    <div class="card-content">
+                        <h3>Garden Buddha Bowl</h3>
+                        <p>Quinoa, avocado, chickpeas</p>
+                        <div class="card-footer">
+                            <span class="price">$18.99</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="suggested-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=220&fit=crop" alt="Molten Lava Cake">
+                    </div>
+                    <div class="card-content">
+                        <h3>Molten Lava Cake</h3>
+                        <p>Chocolate with ice cream</p>
+                        <div class="card-footer">
+                            <span class="price">$14.99</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🍽️</span>
+                        <span class="logo-text">Chef Davs</span>
+                    </div>
+                    <p>Crafting extraordinary culinary experiences since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="menu.html">Our Menu</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Reservations</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="tracking.html">Track Order</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-info">
+                            <li><i class="fa-solid fa-location-dot"></i> 123 Gourmet Avenue, NY</li>
+                            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fa-solid fa-envelope"></i> hello@chefdavs.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chef Davs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

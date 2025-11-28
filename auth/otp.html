@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP - Chef Davs | Enter Verification Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Left Side - Image -->
+        <div class="auth-image">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=1600&fit=crop" alt="Restaurant Ambiance">
+            <div class="image-overlay"></div>
+            <div class="image-content">
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">🍳</span>
+                    <span class="logo-text">Chef Davs</span>
+                </a>
+                <div class="image-text">
+                    <h2>Verify Your Identity</h2>
+                    <p>We've sent a 6-digit verification code to your email. Enter it below to continue with your password reset.</p>
+                </div>
+                <div class="image-features">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Verification</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <span>Valid for 10 min</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-redo"></i>
+                        <span>Resend Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Form -->
+        <div class="auth-form-section">
+            <div class="auth-form-container">
+                <a href="forgot-password.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Change Email
+                </a>
+                
+                <div class="form-header">
+                    <h1>Enter Verification Code</h1>
+                    <p>We've sent a code to <strong>s***@email.com</strong></p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="otp-inputs">
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric">
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric">
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric">
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric">
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric">
+                        <input type="text" maxlength="1" pattern="[0-9]" inputmode="numeric">
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <span>Verify Code</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <div class="resend-section">
+                        <p>Didn't receive the code?</p>
+                        <p>Resend in <span class="timer">00:59</span></p>
+                        <button type="button" class="resend-link" disabled>Resend Code</button>
+                    </div>
+                </form>
+
+                <p class="auth-footer">
+                    Need help? <a href="../pages/contact.html">Contact Support</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

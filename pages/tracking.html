@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - Chef Davs | Track Your Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/tracking.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🍳</span>
+                <span class="logo-text">Chef Davs</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="../auth/login.html" class="btn-login">Login</a>
+            </div>
+            
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1>Track Your Order</h1>
+            <p>Stay updated on your delicious delivery</p>
+        </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section class="tracking-section">
+        <div class="tracking-container">
+            <!-- Left Column - Order Status -->
+            <div class="tracking-main">
+                <!-- Order ID Card -->
+                <div class="order-id-card">
+                    <div class="order-info">
+                        <span class="label">Order ID</span>
+                        <h2>#ORD-2024-8547</h2>
+                    </div>
+                    <div class="order-status-badge">
+                        <span class="status-dot"></span>
+                        <span>On the Way</span>
+                    </div>
+                </div>
+
+                <!-- Estimated Time Box -->
+                <div class="estimated-time-box">
+                    <div class="time-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="time-info">
+                        <span class="label">Estimated Arrival</span>
+                        <h3>12:45 PM - 1:00 PM</h3>
+                        <p>Your order will arrive in approximately <strong>18 minutes</strong></p>
+                    </div>
+                    <div class="time-visual">
+                        <div class="time-progress">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                        <div class="time-labels">
+                            <span>Ordered</span>
+                            <span>Arriving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Progress Timeline -->
+                <div class="progress-timeline-card">
+                    <h3>Order Progress</h3>
+                    <div class="timeline">
+                        <div class="timeline-step completed">
+                            <div class="step-marker">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4>Order Placed</h4>
+                                <p>Your order has been confirmed</p>
+                                <span class="step-time">12:15 PM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-step completed">
+                            <div class="step-marker">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4>Preparing</h4>
+                                <p>Chef is preparing your meal with love</p>
+                                <span class="step-time">12:20 PM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-step active">
+                            <div class="step-marker">
+                                <i class="fas fa-motorcycle"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4>On the Way</h4>
+                                <p>Your rider is heading to your location</p>
+                                <span class="step-time">12:32 PM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-step">
+                            <div class="step-marker">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4>Delivered</h4>
+                                <p>Enjoy your delicious meal!</p>
+                                <span class="step-time">--:-- PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Preview (Static) -->
+                <div class="map-preview-card">
+                    <h3><i class="fas fa-map-marked-alt"></i> Delivery Route</h3>
+                    <div class="map-placeholder">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=400&fit=crop" alt="Map Preview">
+                        <div class="map-overlay">
+                            <div class="location-pin restaurant">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <div class="route-line"></div>
+                            <div class="rider-icon">
+                                <i class="fas fa-motorcycle"></i>
+                            </div>
+                            <div class="route-line-remaining"></div>
+                            <div class="location-pin destination">
+                                <i class="fas fa-home"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-info">
+                        <div class="address-info">
+                            <div class="address-item">
+                                <div class="address-icon restaurant">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <div>
+                                    <span class="label">From</span>
+                                    <p>Chef Davs - Downtown</p>
+                                </div>
+                            </div>
+                            <div class="address-divider">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="address-item">
+                                <div class="address-icon destination">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div>
+                                    <span class="label">To</span>
+                                    <p>456 Maple Avenue, Apt 7B</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Rider & Order Details -->
+            <div class="tracking-sidebar">
+                <!-- Delivery Rider Card -->
+                <div class="rider-card">
+                    <h3>Your Delivery Rider</h3>
+                    <div class="rider-profile">
+                        <div class="rider-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Rider">
+                            <span class="online-badge"></span>
+                        </div>
+                        <div class="rider-info">
+                            <h4>Michael Johnson</h4>
+                            <div class="rider-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                                <span class="rating-count">(1,248 deliveries)</span>
+                            </div>
+                            <div class="rider-vehicle">
+                                <i class="fas fa-motorcycle"></i>
+                                <span>Honda CB350 • ABC 1234</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rider-actions">
+                        <a href="tel:+15551234567" class="action-btn call">
+                            <i class="fas fa-phone"></i>
+                            <span>Call</span>
+                        </a>
+                        <a href="#" class="action-btn message">
+                            <i class="fas fa-comment-dots"></i>
+                            <span>Message</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary-card">
+                    <h3>Order Summary</h3>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <span class="qty">2×</span>
+                            <span class="name">Grilled Salmon</span>
+                            <span class="price">$59.98</span>
+                        </div>
+                        <div class="order-item">
+                            <span class="qty">1×</span>
+                            <span class="name">Truffle Pizza</span>
+                            <span class="price">$28.00</span>
+                        </div>
+                        <div class="order-item">
+                            <span class="qty">1×</span>
+                            <span class="name">Crème Brûlée</span>
+                            <span class="price">$12.00</span>
+                        </div>
+                    </div>
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span>$99.98</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Delivery</span>
+                            <span>$4.99</span>
+                        </div>
+                        <div class="total-row discount">
+                            <span>Promo</span>
+                            <span>-$19.99</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total Paid</span>
+                            <span>$84.98</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Help Card -->
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="help-content">
+                        <h4>Need Help?</h4>
+                        <p>Our support team is available 24/7</p>
+                    </div>
+                    <a href="contact.html" class="help-btn">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🍳</span>
+                        <span class="logo-text">Chef Davs</span>
+                    </div>
+                    <p>Crafting culinary excellence with passion, tradition, and the finest ingredients.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Delivery Info</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Contact Us</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> hello@chefdavs.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, NY</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chef Davs. All rights reserved. Made with <span class="highlight">♥</span> for food lovers.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

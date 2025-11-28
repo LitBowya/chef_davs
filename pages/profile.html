@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Chef Davs | Your Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🍳</span>
+                <span class="logo-text">Chef Davs</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">2</span>
+                </a>
+                <a href="profile.html" class="btn-profile">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </div>
+            
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Banner -->
+    <section class="profile-banner">
+        <div class="banner-bg"></div>
+        <div class="banner-content">
+            <div class="profile-avatar">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face" alt="Profile">
+                <button class="edit-avatar">
+                    <i class="fas fa-camera"></i>
+                </button>
+            </div>
+            <div class="profile-info">
+                <h1>Sarah Johnson</h1>
+                <p>Member since January 2024</p>
+                <div class="member-stats">
+                    <div class="stat">
+                        <span class="stat-value">47</span>
+                        <span class="stat-label">Orders</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">12</span>
+                        <span class="stat-label">Reviews</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">Gold</span>
+                        <span class="stat-label">Member</span>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <a href="#" class="btn-edit-profile">
+                    <i class="fas fa-pen"></i>
+                    Edit Profile
+                </a>
+                <a href="../auth/login.html" class="btn-logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <section class="profile-section">
+        <div class="profile-container">
+            <!-- Sidebar -->
+            <aside class="profile-sidebar">
+                <nav class="sidebar-nav">
+                    <a href="#" class="nav-item active">
+                        <i class="fas fa-user"></i>
+                        <span>Personal Info</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Addresses</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Order History</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Saved Meals</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Payment Methods</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-bell"></i>
+                        <span>Notifications</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </nav>
+                
+                <div class="loyalty-card">
+                    <div class="loyalty-badge">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h4>Gold Member</h4>
+                    <p>Earn 2x points on every order</p>
+                    <div class="points-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                        <span>650 / 1000 pts to Platinum</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="profile-main">
+                <!-- Personal Details Card -->
+                <div class="profile-card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-user"></i> Personal Details</h2>
+                        <button class="btn-edit"><i class="fas fa-pen"></i> Edit</button>
+                    </div>
+                    <div class="card-content">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="label">Full Name</span>
+                                <span class="value">Sarah Johnson</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Email</span>
+                                <span class="value">sarah.johnson@email.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Phone</span>
+                                <span class="value">+1 (555) 123-4567</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Date of Birth</span>
+                                <span class="value">March 15, 1990</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Address Book Card -->
+                <div class="profile-card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-map-marker-alt"></i> Address Book</h2>
+                        <button class="btn-add"><i class="fas fa-plus"></i> Add New</button>
+                    </div>
+                    <div class="card-content">
+                        <div class="address-grid">
+                            <div class="address-item default">
+                                <div class="address-badge">Default</div>
+                                <h4><i class="fas fa-home"></i> Home</h4>
+                                <p>456 Maple Avenue, Apt 7B</p>
+                                <p>New York, NY 10001</p>
+                                <div class="address-actions">
+                                    <button class="btn-sm"><i class="fas fa-pen"></i> Edit</button>
+                                    <button class="btn-sm danger"><i class="fas fa-trash"></i> Delete</button>
+                                </div>
+                            </div>
+                            
+                            <div class="address-item">
+                                <h4><i class="fas fa-briefcase"></i> Office</h4>
+                                <p>789 Business Center, Floor 12</p>
+                                <p>New York, NY 10002</p>
+                                <div class="address-actions">
+                                    <button class="btn-sm"><i class="fas fa-pen"></i> Edit</button>
+                                    <button class="btn-sm danger"><i class="fas fa-trash"></i> Delete</button>
+                                </div>
+                            </div>
+                            
+                            <div class="address-item add-new">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Add New Address</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order History Table -->
+                <div class="profile-card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-shopping-bag"></i> Order History</h2>
+                        <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="card-content">
+                        <div class="orders-table">
+                            <div class="table-header">
+                                <span>Order ID</span>
+                                <span>Date</span>
+                                <span>Items</span>
+                                <span>Total</span>
+                                <span>Status</span>
+                                <span>Action</span>
+                            </div>
+                            
+                            <div class="table-row">
+                                <span class="order-id">#ORD-8547</span>
+                                <span>Dec 15, 2024</span>
+                                <span>3 items</span>
+                                <span class="order-total">$84.98</span>
+                                <span class="status delivered"><i class="fas fa-check-circle"></i> Delivered</span>
+                                <a href="tracking.html" class="btn-track">Track</a>
+                            </div>
+                            
+                            <div class="table-row">
+                                <span class="order-id">#ORD-8532</span>
+                                <span>Dec 12, 2024</span>
+                                <span>2 items</span>
+                                <span class="order-total">$45.50</span>
+                                <span class="status delivered"><i class="fas fa-check-circle"></i> Delivered</span>
+                                <a href="#" class="btn-reorder">Reorder</a>
+                            </div>
+                            
+                            <div class="table-row">
+                                <span class="order-id">#ORD-8521</span>
+                                <span>Dec 10, 2024</span>
+                                <span>5 items</span>
+                                <span class="order-total">$127.00</span>
+                                <span class="status delivered"><i class="fas fa-check-circle"></i> Delivered</span>
+                                <a href="#" class="btn-reorder">Reorder</a>
+                            </div>
+                            
+                            <div class="table-row">
+                                <span class="order-id">#ORD-8498</span>
+                                <span>Dec 5, 2024</span>
+                                <span>1 item</span>
+                                <span class="order-total">$29.99</span>
+                                <span class="status cancelled"><i class="fas fa-times-circle"></i> Cancelled</span>
+                                <a href="#" class="btn-reorder">Reorder</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saved Meals Gallery -->
+                <div class="profile-card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-heart"></i> Saved Meals</h2>
+                        <a href="menu.html" class="view-all">Browse Menu <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="card-content">
+                        <div class="saved-meals-grid">
+                            <div class="meal-item">
+                                <div class="meal-image">
+                                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300&h=200&fit=crop" alt="Grilled Salmon">
+                                    <button class="remove-btn"><i class="fas fa-heart"></i></button>
+                                </div>
+                                <div class="meal-info">
+                                    <h4>Grilled Salmon</h4>
+                                    <span class="meal-price">$29.99</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                            
+                            <div class="meal-item">
+                                <div class="meal-image">
+                                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&h=200&fit=crop" alt="Truffle Pizza">
+                                    <button class="remove-btn"><i class="fas fa-heart"></i></button>
+                                </div>
+                                <div class="meal-info">
+                                    <h4>Truffle Pizza</h4>
+                                    <span class="meal-price">$28.00</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                            
+                            <div class="meal-item">
+                                <div class="meal-image">
+                                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=200&fit=crop" alt="Crème Brûlée">
+                                    <button class="remove-btn"><i class="fas fa-heart"></i></button>
+                                </div>
+                                <div class="meal-info">
+                                    <h4>Crème Brûlée</h4>
+                                    <span class="meal-price">$12.00</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                            
+                            <div class="meal-item">
+                                <div class="meal-image">
+                                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=200&fit=crop" alt="Garden Salad">
+                                    <button class="remove-btn"><i class="fas fa-heart"></i></button>
+                                </div>
+                                <div class="meal-info">
+                                    <h4>Garden Salad</h4>
+                                    <span class="meal-price">$14.50</span>
+                                </div>
+                                <button class="add-to-cart-btn">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🍳</span>
+                        <span class="logo-text">Chef Davs</span>
+                    </div>
+                    <p>Crafting culinary excellence with passion, tradition, and the finest ingredients.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Delivery Info</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Contact Us</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> hello@chefdavs.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, NY</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chef Davs. All rights reserved. Made with <span class="highlight">♥</span> for food lovers.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

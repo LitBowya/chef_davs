@@ -1,0 +1,703 @@
+/* ========================================
+   Chef Davs - Authentication Pages Styles
+   Premium Restaurant Theme
+   ======================================== */
+
+:root {
+  --primary: #ff8a00;
+  --primary-light: #ffb347;
+  --primary-dark: #e67a00;
+  --secondary: #1e9e56;
+  --secondary-light: #2ebd6b;
+
+  --ivory: #fffff0;
+  --cream: #fdf5e6;
+  --soft-gray: #f5f5f5;
+  --medium-gray: #9ca3af;
+  --charcoal: #2d3436;
+  --dark: #1a1a2e;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Lato", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--charcoal);
+  background-color: var(--soft-gray);
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--dark);
+}
+
+/* ========================================
+   Auth Container
+   ======================================== */
+.auth-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+/* ========================================
+   Auth Image Side
+   ======================================== */
+.auth-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 46, 0.9) 0%,
+    rgba(26, 26, 46, 0.7) 50%,
+    rgba(255, 138, 0, 0.3) 100%
+  );
+}
+
+.image-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  font-size: 2.25rem;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.image-text {
+  max-width: 400px;
+}
+
+.image-text h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.image-text p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  line-height: 1.7;
+}
+
+.image-features {
+  display: flex;
+  gap: 30px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.feature i {
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.feature span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ========================================
+   Auth Form Side
+   ======================================== */
+.auth-form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: white;
+}
+
+.auth-form-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+.form-header {
+  margin-bottom: 36px;
+}
+
+.form-header h1 {
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+}
+
+.form-header p {
+  color: var(--medium-gray);
+  font-size: 1rem;
+}
+
+/* Form Styles */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--charcoal);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper i:first-child {
+  position: absolute;
+  left: 16px;
+  color: var(--medium-gray);
+  font-size: 1rem;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 16px 16px 16px 48px;
+  border: 2px solid var(--soft-gray);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.input-wrapper input::placeholder {
+  color: var(--medium-gray);
+}
+
+.toggle-password {
+  position: absolute;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--medium-gray);
+  font-size: 1rem;
+  padding: 4px;
+  transition: color var(--transition-fast);
+}
+
+.toggle-password:hover {
+  color: var(--charcoal);
+}
+
+/* Form Options */
+.form-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--charcoal);
+}
+
+.checkbox-wrapper input {
+  display: none;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--soft-gray);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.checkbox-wrapper input:checked + .checkmark {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.checkbox-wrapper input:checked + .checkmark::after {
+  content: "✓";
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.forgot-link {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color var(--transition-fast);
+}
+
+.forgot-link:hover {
+  color: var(--primary-dark);
+}
+
+/* Submit Button */
+.btn-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: all var(--transition-normal);
+  box-shadow: 0 4px 20px rgba(255, 138, 0, 0.3);
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(255, 138, 0, 0.4);
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--soft-gray);
+}
+
+.divider span {
+  padding: 0 20px;
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+}
+
+/* Social Auth */
+.social-auth {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  border: 2px solid var(--soft-gray);
+  background: white;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all var(--transition-normal);
+}
+
+.social-btn:hover {
+  border-color: var(--charcoal);
+  background: var(--soft-gray);
+}
+
+.social-btn.google i {
+  color: #db4437;
+}
+.social-btn.facebook i {
+  color: #4267b2;
+}
+.social-btn.apple i {
+  color: #000;
+}
+
+/* Auth Footer */
+.auth-footer {
+  text-align: center;
+  margin-top: 32px;
+  color: var(--medium-gray);
+}
+
+.auth-footer a {
+  color: var(--primary);
+  font-weight: 700;
+  transition: color var(--transition-fast);
+}
+
+.auth-footer a:hover {
+  color: var(--primary-dark);
+}
+
+/* ========================================
+   OTP Input Styles
+   ======================================== */
+.otp-inputs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.otp-inputs input {
+  width: 60px;
+  height: 70px;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  border: 2px solid var(--soft-gray);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.otp-inputs input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: rgba(255, 138, 0, 0.05);
+}
+
+.resend-section {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.resend-section p {
+  color: var(--medium-gray);
+  margin-bottom: 10px;
+}
+
+.timer {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.resend-link {
+  color: var(--primary);
+  font-weight: 600;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.resend-link:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   Password Strength Indicator
+   ======================================== */
+.password-strength {
+  margin-top: 10px;
+}
+
+.strength-bar {
+  height: 4px;
+  background: var(--soft-gray);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.strength-fill {
+  height: 100%;
+  width: 60%;
+  background: var(--secondary);
+  border-radius: 2px;
+  transition: width var(--transition-normal);
+}
+
+.strength-fill.weak {
+  width: 25%;
+  background: #dc3545;
+}
+.strength-fill.fair {
+  width: 50%;
+  background: #ffc107;
+}
+.strength-fill.good {
+  width: 75%;
+  background: #17a2b8;
+}
+.strength-fill.strong {
+  width: 100%;
+  background: var(--secondary);
+}
+
+.strength-text {
+  font-size: 0.8rem;
+  color: var(--medium-gray);
+}
+
+/* Password Requirements */
+.password-requirements {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--soft-gray);
+  border-radius: var(--radius-md);
+}
+
+.password-requirements h4 {
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  color: var(--charcoal);
+}
+
+.requirement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--medium-gray);
+  margin-bottom: 6px;
+}
+
+.requirement i {
+  font-size: 0.75rem;
+}
+
+.requirement.valid {
+  color: var(--secondary);
+}
+
+.requirement.valid i {
+  color: var(--secondary);
+}
+
+/* ========================================
+   Success Message
+   ======================================== */
+.success-message {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.success-icon {
+  width: 100px;
+  height: 100px;
+  background: rgba(30, 158, 86, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  font-size: 3rem;
+  color: var(--secondary);
+}
+
+.success-message h2 {
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+}
+
+.success-message p {
+  color: var(--medium-gray);
+  margin-bottom: 32px;
+}
+
+/* ========================================
+   Form Row
+   ======================================== */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Terms Checkbox */
+.terms-checkbox {
+  font-size: 0.9rem;
+  color: var(--medium-gray);
+}
+
+.terms-checkbox a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Back Link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--medium-gray);
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: color var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--charcoal);
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 1024px) {
+  .auth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-image {
+    display: none;
+  }
+
+  .auth-form-section {
+    min-height: 100vh;
+  }
+
+  .auth-form-container {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-form-section {
+    padding: 30px 20px;
+  }
+
+  .form-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .social-auth {
+    flex-direction: column;
+  }
+
+  .social-btn span {
+    display: inline;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .otp-inputs input {
+    width: 50px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .otp-inputs {
+    gap: 8px;
+  }
+
+  .otp-inputs input {
+    width: 45px;
+    height: 55px;
+    font-size: 1.25rem;
+  }
+}

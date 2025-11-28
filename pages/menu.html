@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Chef Davs</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Chef Davs</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">3</span>
+                </a>
+                <a href="../auth/login.html" class="btn-login">Sign In</a>
+                <a href="profile.html" class="profile-icon">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-pattern"></div>
+        <div class="hero-content">
+            <span class="page-badge">🍴 Our Menu</span>
+            <h1>Culinary <span class="highlight">Delights</span></h1>
+            <p>Explore our carefully crafted menu featuring fresh, locally-sourced ingredients</p>
+        </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <section class="menu-section">
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">
+                <i class="fa-solid fa-utensils"></i>
+                <span>All Items</span>
+            </button>
+            <button class="tab-btn" data-category="starters">
+                <i class="fa-solid fa-bowl-food"></i>
+                <span>Starters</span>
+            </button>
+            <button class="tab-btn" data-category="mains">
+                <i class="fa-solid fa-plate-wheat"></i>
+                <span>Main Course</span>
+            </button>
+            <button class="tab-btn" data-category="seafood">
+                <i class="fa-solid fa-fish"></i>
+                <span>Seafood</span>
+            </button>
+            <button class="tab-btn" data-category="desserts">
+                <i class="fa-solid fa-cake-candles"></i>
+                <span>Desserts</span>
+            </button>
+            <button class="tab-btn" data-category="beverages">
+                <i class="fa-solid fa-wine-glass"></i>
+                <span>Beverages</span>
+            </button>
+        </div>
+
+        <!-- Food Grid -->
+        <div class="food-grid">
+            <!-- Starters -->
+            <article class="menu-card" data-category="starters">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=400&h=300&fit=crop" alt="Bruschetta">
+                    <span class="card-badge">Popular</span>
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Starter</div>
+                    <h3>Classic Bruschetta</h3>
+                    <p>Toasted ciabatta with fresh tomatoes, basil, garlic, and balsamic glaze</p>
+                    <div class="card-footer">
+                        <span class="price">$12.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="starters">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1608039829572-f79f22b7eb36?w=400&h=300&fit=crop" alt="Soup">
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Starter</div>
+                    <h3>Lobster Bisque</h3>
+                    <p>Creamy lobster soup with brandy, cream, and fresh herbs</p>
+                    <div class="card-footer">
+                        <span class="price">$18.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="starters">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1626804475297-41608ea09aeb?w=400&h=300&fit=crop" alt="Calamari">
+                    <span class="card-badge">Chef's Pick</span>
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Starter</div>
+                    <h3>Crispy Calamari</h3>
+                    <p>Golden fried squid rings with aioli and lemon wedges</p>
+                    <div class="card-footer">
+                        <span class="price">$16.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Main Courses -->
+            <article class="menu-card" data-category="mains">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?w=400&h=300&fit=crop" alt="Wagyu Steak">
+                    <span class="card-badge premium">Premium</span>
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Main Course</div>
+                    <h3>A5 Wagyu Ribeye</h3>
+                    <p>Japanese Wagyu with truffle mash and seasonal vegetables</p>
+                    <div class="card-footer">
+                        <span class="price">$89.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="mains">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop" alt="BBQ Ribs">
+                    <span class="card-badge">Best Seller</span>
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Main Course</div>
+                    <h3>Smoky BBQ Ribs</h3>
+                    <p>Slow-cooked pork ribs with house-made BBQ glaze</p>
+                    <div class="card-footer">
+                        <span class="price">$36.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="mains">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&h=300&fit=crop" alt="Roast Chicken">
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Main Course</div>
+                    <h3>Herb Roasted Chicken</h3>
+                    <p>Free-range chicken with rosemary potatoes and gravy</p>
+                    <div class="card-footer">
+                        <span class="price">$28.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="mains">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop" alt="Pasta">
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Main Course</div>
+                    <h3>Truffle Carbonara</h3>
+                    <p>Handmade pasta with pancetta, egg, and black truffle</p>
+                    <div class="card-footer">
+                        <span class="price">$29.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Seafood -->
+            <article class="menu-card" data-category="seafood">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Grilled Salmon">
+                    <span class="card-badge">Popular</span>
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Seafood</div>
+                    <h3>Grilled Atlantic Salmon</h3>
+                    <p>Fresh salmon with herb butter and seasonal vegetables</p>
+                    <div class="card-footer">
+                        <span class="price">$28.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="seafood">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop" alt="Seafood Platter">
+                    <span class="card-badge premium">Signature</span>
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Seafood</div>
+                    <h3>Ocean's Bounty Platter</h3>
+                    <p>Lobster, prawns, oysters, crab legs, and mussels</p>
+                    <div class="card-footer">
+                        <span class="price">$124.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="seafood">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=400&h=300&fit=crop" alt="Shrimp">
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Seafood</div>
+                    <h3>Garlic Butter Prawns</h3>
+                    <p>Jumbo prawns sautéed in garlic herb butter</p>
+                    <div class="card-footer">
+                        <span class="price">$32.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Desserts -->
+            <article class="menu-card" data-category="desserts">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Lava Cake">
+                    <span class="card-badge">Must Try</span>
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Dessert</div>
+                    <h3>Molten Lava Cake</h3>
+                    <p>Warm chocolate cake with gooey center and vanilla ice cream</p>
+                    <div class="card-footer">
+                        <span class="price">$14.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="desserts">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop" alt="Tiramisu">
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Dessert</div>
+                    <h3>Classic Tiramisu</h3>
+                    <p>Layers of espresso-soaked ladyfingers and mascarpone</p>
+                    <div class="card-footer">
+                        <span class="price">$12.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="desserts">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop" alt="Cheesecake">
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Dessert</div>
+                    <h3>New York Cheesecake</h3>
+                    <p>Creamy cheesecake with berry compote</p>
+                    <div class="card-footer">
+                        <span class="price">$11.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Beverages -->
+            <article class="menu-card" data-category="beverages">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop" alt="Wine">
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Beverage</div>
+                    <h3>Premium Red Wine</h3>
+                    <p>Selected vintage from Napa Valley vineyards</p>
+                    <div class="card-footer">
+                        <span class="price">$45.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="beverages">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop" alt="Cocktail">
+                    <span class="card-badge">Signature</span>
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Beverage</div>
+                    <h3>Chef's Special Cocktail</h3>
+                    <p>House-crafted blend with premium spirits</p>
+                    <div class="card-footer">
+                        <span class="price">$16.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu-card" data-category="beverages">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" alt="Coffee">
+                    <div class="card-overlay">
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Beverage</div>
+                    <h3>Artisan Espresso</h3>
+                    <p>Single-origin beans, freshly roasted</p>
+                    <div class="card-footer">
+                        <span class="price">$5.99</span>
+                        <div class="card-actions">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Limited Time Offers Banner -->
+    <section class="offers-banner">
+        <div class="banner-pattern"></div>
+        <div class="banner-content">
+            <div class="banner-text">
+                <span class="banner-badge">🔥 Limited Time</span>
+                <h2>Weekend Special Feast</h2>
+                <p>Order any 2 main courses and get a complimentary dessert. Valid Friday to Sunday only!</p>
+                <div class="banner-features">
+                    <span><i class="fa-solid fa-check"></i> Free dessert</span>
+                    <span><i class="fa-solid fa-check"></i> Priority seating</span>
+                    <span><i class="fa-solid fa-check"></i> Complimentary drink</span>
+                </div>
+                <div class="banner-timer">
+                    <div class="timer-block">
+                        <span class="timer-num">02</span>
+                        <span class="timer-label">Days</span>
+                    </div>
+                    <div class="timer-block">
+                        <span class="timer-num">14</span>
+                        <span class="timer-label">Hours</span>
+                    </div>
+                    <div class="timer-block">
+                        <span class="timer-num">36</span>
+                        <span class="timer-label">Minutes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-image">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&h=350&fit=crop" alt="Special Feast">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🍽️</span>
+                        <span class="logo-text">Chef Davs</span>
+                    </div>
+                    <p>Crafting extraordinary culinary experiences since 2009. Every dish is a celebration of flavor, tradition, and innovation.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="menu.html">Our Menu</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Reservations</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="tracking.html">Track Order</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-info">
+                            <li><i class="fa-solid fa-location-dot"></i> 123 Gourmet Avenue, NY</li>
+                            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fa-solid fa-envelope"></i> hello@chefdavs.com</li>
+                            <li><i class="fa-solid fa-clock"></i> Mon-Sun: 11am - 11pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chef Davs. All rights reserved. Crafted with <i class="fa-solid fa-heart"></i> for food lovers.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

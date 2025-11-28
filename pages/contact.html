@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Chef Davs</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Chef Davs</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">3</span>
+                </a>
+                <a href="../auth/login.html" class="btn-login">Sign In</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1600&h=500&fit=crop" alt="Restaurant">
+        <div class="hero-content">
+            <span class="hero-badge">📍 Get In Touch</span>
+            <h1>Contact <span class="highlight">Us</span></h1>
+            <p>We'd love to hear from you. Reach out for reservations, inquiries, or feedback</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info-wrapper">
+                <div class="info-card">
+                    <h2>Let's <span class="highlight">Connect</span></h2>
+                    <p class="info-intro">Have questions about our menu, reservations, or catering services? We're here to help make your dining experience exceptional.</p>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Visit Us</h4>
+                                <p>123 Gourmet Avenue<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email Us</h4>
+                                <p>hello@chefdavs.com<br>reservations@chefdavs.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Opening Hours</h4>
+                                <p>Mon - Fri: 11am - 11pm<br>Sat - Sun: 10am - 12am</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <div class="form-card">
+                    <h2>Send a <span class="highlight">Message</span></h2>
+                    <p class="form-intro">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" placeholder="Doe">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option value="">Select a topic</option>
+                                <option value="reservation">Make a Reservation</option>
+                                <option value="catering">Catering Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="careers">Careers</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <div class="map-header">
+                <h2>Find <span class="highlight">Us</span></h2>
+                <p>Located in the heart of Manhattan, easily accessible by subway and with nearby parking</p>
+            </div>
+            <div class="map-wrapper">
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&h=400&fit=crop" alt="Map Location" class="map-image">
+                <div class="map-overlay">
+                    <div class="map-pin">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="pin-info">
+                            <h4>Chef Davs Restaurant</h4>
+                            <p>123 Gourmet Avenue, NY</p>
+                            <span class="directions-link">
+                                <i class="fa-solid fa-diamond-turn-right"></i>
+                                Get Directions
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nearby-info">
+                <div class="nearby-item">
+                    <i class="fa-solid fa-train-subway"></i>
+                    <div>
+                        <h4>Subway Access</h4>
+                        <p>14th Street Station - 2 min walk</p>
+                    </div>
+                </div>
+                <div class="nearby-item">
+                    <i class="fa-solid fa-square-parking"></i>
+                    <div>
+                        <h4>Parking</h4>
+                        <p>Valet parking available</p>
+                    </div>
+                </div>
+                <div class="nearby-item">
+                    <i class="fa-solid fa-wheelchair"></i>
+                    <div>
+                        <h4>Accessibility</h4>
+                        <p>Wheelchair accessible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🍽️</span>
+                        <span class="logo-text">Chef Davs</span>
+                    </div>
+                    <p>Crafting extraordinary culinary experiences since 2009.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="menu.html">Our Menu</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Reservations</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="tracking.html">Track Order</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-info">
+                            <li><i class="fa-solid fa-location-dot"></i> 123 Gourmet Avenue, NY</li>
+                            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fa-solid fa-envelope"></i> hello@chefdavs.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chef Davs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

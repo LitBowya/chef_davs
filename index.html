@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Davs | Premium Culinary Experience</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Chef Davs</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="pages/cart.html" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">3</span>
+                </a>
+                <a href="auth/login.html" class="btn-login">Sign In</a>
+                <a href="pages/profile.html" class="profile-icon">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">✨ Premium Dining Experience</span>
+                <h1>Savor Every <span class="highlight">Moment</span> With Exquisite Cuisine</h1>
+                <p>Experience culinary artistry crafted with passion, premium ingredients, and a touch of magic. Every dish tells a story of tradition and innovation.</p>
+                <div class="hero-buttons">
+                    <a href="pages/menu.html" class="btn-primary">Explore Menu</a>
+                    <a href="pages/about.html" class="btn-secondary">Our Story</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">50k+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">120+</span>
+                        <span class="stat-label">Signature Dishes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=700&fit=crop" alt="Gourmet Dish">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">⭐</div>
+                        <div class="card-info">
+                            <span class="card-title">4.9 Rating</span>
+                            <span class="card-subtitle">2000+ Reviews</span>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">🍳</div>
+                        <div class="card-info">
+                            <span class="card-title">Fresh Daily</span>
+                            <span class="card-subtitle">Farm to Table</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Food Highlights -->
+    <section class="featured-section">
+        <div class="section-header">
+            <span class="section-badge">Our Specialties</span>
+            <h2>Featured <span class="highlight">Highlights</span></h2>
+            <p>Discover our chef's selection of premium dishes crafted with passion</p>
+        </div>
+        <div class="featured-grid">
+            <article class="food-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Grilled Salmon">
+                    <span class="card-badge">Chef's Pick</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Main Course</div>
+                    <h3>Grilled Atlantic Salmon</h3>
+                    <p>Fresh salmon with herb butter, seasonal vegetables</p>
+                    <div class="card-footer">
+                        <span class="price">$28.99</span>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="food-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="Truffle Pizza">
+                    <span class="card-badge">Popular</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Italian</div>
+                    <h3>Black Truffle Pizza</h3>
+                    <p>Wood-fired with fresh truffle shavings</p>
+                    <div class="card-footer">
+                        <span class="price">$34.99</span>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="food-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?w=400&h=300&fit=crop" alt="Wagyu Steak">
+                    <span class="card-badge">Premium</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Steakhouse</div>
+                    <h3>A5 Wagyu Ribeye</h3>
+                    <p>Japanese wagyu with truffle mash</p>
+                    <div class="card-footer">
+                        <span class="price">$89.99</span>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="food-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Dessert">
+                    <span class="card-badge">New</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Dessert</div>
+                    <h3>Molten Lava Cake</h3>
+                    <p>Rich chocolate with vanilla bean ice cream</p>
+                    <div class="card-footer">
+                        <span class="price">$14.99</span>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="food-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="Buddha Bowl">
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Healthy</div>
+                    <h3>Garden Buddha Bowl</h3>
+                    <p>Quinoa, avocado, roasted chickpeas</p>
+                    <div class="card-footer">
+                        <span class="price">$18.99</span>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="food-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop" alt="Seafood Platter">
+                    <span class="card-badge">Signature</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-category">Seafood</div>
+                    <h3>Ocean's Bounty Platter</h3>
+                    <p>Lobster, prawns, oysters, crab legs</p>
+                    <div class="card-footer">
+                        <span class="price">$124.99</span>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="section-cta">
+            <a href="pages/menu.html" class="btn-primary">View Full Menu</a>
+        </div>
+    </section>
+
+    <!-- Seasonal Specials Slider -->
+    <section class="specials-section">
+        <div class="specials-bg-pattern"></div>
+        <div class="section-header light">
+            <span class="section-badge">Limited Time</span>
+            <h2>Seasonal <span class="highlight">Specials</span></h2>
+            <p>Exclusive dishes available for a limited time only</p>
+        </div>
+        <div class="specials-slider">
+            <div class="special-card">
+                <div class="special-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=350&h=250&fit=crop" alt="Winter Special">
+                </div>
+                <div class="special-content">
+                    <span class="special-season">🍂 Autumn Special</span>
+                    <h3>Pumpkin Spice Risotto</h3>
+                    <p>Creamy arborio rice with roasted pumpkin</p>
+                    <div class="special-price">
+                        <span class="original">$32.99</span>
+                        <span class="discounted">$24.99</span>
+                    </div>
+                    <span class="availability">Available until Dec 15</span>
+                </div>
+            </div>
+            <div class="special-card">
+                <div class="special-image">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=350&h=250&fit=crop" alt="BBQ Special">
+                </div>
+                <div class="special-content">
+                    <span class="special-season">🔥 Limited Edition</span>
+                    <h3>Smoky BBQ Ribs</h3>
+                    <p>Slow-cooked with house-made BBQ glaze</p>
+                    <div class="special-price">
+                        <span class="original">$45.99</span>
+                        <span class="discounted">$36.99</span>
+                    </div>
+                    <span class="availability">Only 20 servings daily</span>
+                </div>
+            </div>
+            <div class="special-card">
+                <div class="special-image">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=350&h=250&fit=crop" alt="Pasta Special">
+                </div>
+                <div class="special-content">
+                    <span class="special-season">🌟 Chef's Creation</span>
+                    <h3>Truffle Carbonara</h3>
+                    <p>Handmade pasta with black truffle</p>
+                    <div class="special-price">
+                        <span class="original">$38.99</span>
+                        <span class="discounted">$29.99</span>
+                    </div>
+                    <span class="availability">Weekend exclusive</span>
+                </div>
+            </div>
+            <div class="special-card">
+                <div class="special-image">
+                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=350&h=250&fit=crop" alt="Burger Special">
+                </div>
+                <div class="special-content">
+                    <span class="special-season">🍔 Fan Favorite</span>
+                    <h3>Wagyu Smash Burger</h3>
+                    <p>Double patty with aged cheddar</p>
+                    <div class="special-price">
+                        <span class="original">$28.99</span>
+                        <span class="discounted">$22.99</span>
+                    </div>
+                    <span class="availability">Lunch special 11am-3pm</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us-section">
+        <div class="section-header">
+            <span class="section-badge">Why Chef Davs</span>
+            <h2>The <span class="highlight">Difference</span></h2>
+            <p>What makes our culinary experience truly exceptional</p>
+        </div>
+        <div class="why-us-grid">
+            <div class="why-card">
+                <div class="why-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <h3>Farm Fresh</h3>
+                <p>Locally sourced ingredients from trusted farms, delivered fresh daily</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <h3>Award Winning</h3>
+                <p>Multiple Michelin stars and culinary excellence awards</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3>Swift Delivery</h3>
+                <p>Hot and fresh to your doorstep in under 30 minutes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Stories -->
+    <section class="reviews-section">
+        <div class="section-header">
+            <span class="section-badge">Testimonials</span>
+            <h2>Customer <span class="highlight">Stories</span></h2>
+            <p>Hear what our guests have to say about their experience</p>
+        </div>
+        <div class="reviews-grid">
+            <article class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" alt="Sarah M." class="reviewer-image">
+                    <div class="reviewer-info">
+                        <h4>Sarah Mitchell</h4>
+                        <span>Food Blogger</span>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"An extraordinary dining experience! The Wagyu steak was cooked to absolute perfection. The ambiance, service, and attention to detail exceeded all expectations."</p>
+                <span class="review-date">November 2024</span>
+            </article>
+            <article class="review-card featured">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop" alt="James W." class="reviewer-image">
+                    <div class="reviewer-info">
+                        <h4>James Wilson</h4>
+                        <span>Executive Chef</span>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"As a fellow chef, I'm incredibly impressed by the creativity and execution. Every dish is a masterpiece. The truffle pizza is now my benchmark for excellence."</p>
+                <span class="review-date">October 2024</span>
+            </article>
+            <article class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop" alt="Emily R." class="reviewer-image">
+                    <div class="reviewer-info">
+                        <h4>Emily Roberts</h4>
+                        <span>Verified Customer</span>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="review-text">"Perfect for our anniversary dinner. The staff made us feel so special. The seafood platter was incredible—fresh, beautifully presented, and absolutely delicious!"</p>
+                <span class="review-date">November 2024</span>
+            </article>
+        </div>
+    </section>
+
+    <!-- Featured Chef -->
+    <section class="chef-section">
+        <div class="chef-content">
+            <div class="chef-image">
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=500&h=600&fit=crop" alt="Chef David">
+                <div class="chef-badge">
+                    <span>Master Chef</span>
+                </div>
+            </div>
+            <div class="chef-info">
+                <span class="section-badge">Meet Our Chef</span>
+                <h2>Chef <span class="highlight">David Mensah</span></h2>
+                <div class="chef-quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"Cooking is not just about food; it's about creating moments, memories, and bringing people together through the universal language of flavor."</p>
+                </div>
+                <p class="chef-bio">With over 20 years of culinary expertise spanning three continents, Chef David brings a unique fusion of traditional techniques and modern innovation to every dish. Trained at Le Cordon Bleu and refined in Michelin-starred kitchens across Europe, his passion for excellence drives our kitchen's creative vision.</p>
+                <div class="chef-achievements">
+                    <div class="achievement">
+                        <i class="fa-solid fa-medal"></i>
+                        <span>3 Michelin Stars</span>
+                    </div>
+                    <div class="achievement">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>James Beard Award</span>
+                    </div>
+                    <div class="achievement">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>Le Cordon Bleu</span>
+                    </div>
+                </div>
+                <a href="pages/about.html" class="btn-primary">Read Full Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🍽️</span>
+                        <span class="logo-text">Chef Davs</span>
+                    </div>
+                    <p>Crafting extraordinary culinary experiences since 2009. Every dish is a celebration of flavor, tradition, and innovation.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="pages/menu.html">Our Menu</a></li>
+                            <li><a href="pages/about.html">About Us</a></li>
+                            <li><a href="pages/contact.html">Contact</a></li>
+                            <li><a href="#">Reservations</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="pages/tracking.html">Track Order</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-info">
+                            <li><i class="fa-solid fa-location-dot"></i> 123 Gourmet Avenue, NY</li>
+                            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fa-solid fa-envelope"></i> hello@chefdavs.com</li>
+                            <li><i class="fa-solid fa-clock"></i> Mon-Sun: 11am - 11pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chef Davs. All rights reserved. Crafted with <i class="fa-solid fa-heart"></i> for food lovers.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

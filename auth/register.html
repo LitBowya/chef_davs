@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Chef Davs | Create Your Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Left Side - Form -->
+        <div class="auth-form-section">
+            <div class="auth-form-container">
+                <a href="login.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Login
+                </a>
+                
+                <div class="form-header">
+                    <h1>Create Account</h1>
+                    <p>Join Chef Davs and enjoy exclusive benefits</p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="firstName" placeholder="First name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="lastName" placeholder="Last name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="phone" placeholder="+1 (000) 000-0000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" placeholder="Create a password">
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-bar">
+                                <div class="strength-fill good"></div>
+                            </div>
+                            <span class="strength-text">Password strength: Good</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirmPassword" placeholder="Confirm your password">
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="password-requirements">
+                        <h4>Password must contain:</h4>
+                        <div class="requirement valid">
+                            <i class="fas fa-check-circle"></i>
+                            <span>At least 8 characters</span>
+                        </div>
+                        <div class="requirement valid">
+                            <i class="fas fa-check-circle"></i>
+                            <span>One uppercase letter</span>
+                        </div>
+                        <div class="requirement valid">
+                            <i class="fas fa-check-circle"></i>
+                            <span>One lowercase letter</span>
+                        </div>
+                        <div class="requirement">
+                            <i class="fas fa-circle"></i>
+                            <span>One number</span>
+                        </div>
+                        <div class="requirement">
+                            <i class="fas fa-circle"></i>
+                            <span>One special character (!@#$%^&*)</span>
+                        </div>
+                    </div>
+
+                    <label class="checkbox-wrapper terms-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                    </label>
+
+                    <button type="submit" class="btn-submit">
+                        <span>Create Account</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <div class="divider">
+                    <span>or sign up with</span>
+                </div>
+
+                <div class="social-auth">
+                    <button class="social-btn google">
+                        <i class="fab fa-google"></i>
+                        <span>Google</span>
+                    </button>
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </button>
+                    <button class="social-btn apple">
+                        <i class="fab fa-apple"></i>
+                        <span>Apple</span>
+                    </button>
+                </div>
+
+                <p class="auth-footer">
+                    Already have an account? <a href="login.html">Sign In</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Side - Image -->
+        <div class="auth-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200&h=1600&fit=crop" alt="Delicious Pizza">
+            <div class="image-overlay"></div>
+            <div class="image-content">
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">🍳</span>
+                    <span class="logo-text">Chef Davs</span>
+                </a>
+                <div class="image-text">
+                    <h2>Join Our Family</h2>
+                    <p>Create an account and unlock exclusive benefits, personalized recommendations, and faster checkout.</p>
+                </div>
+                <div class="image-features">
+                    <div class="feature">
+                        <i class="fas fa-gift"></i>
+                        <span>Welcome Bonus</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-percent"></i>
+                        <span>Exclusive Deals</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-crown"></i>
+                        <span>Loyalty Rewards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

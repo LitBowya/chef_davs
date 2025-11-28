@@ -1,0 +1,978 @@
+/* ========================================
+   Chef Davs - About Page Styles
+   Premium Restaurant Theme
+   ======================================== */
+
+:root {
+  --primary: #ff8a00;
+  --primary-light: #ffb347;
+  --primary-dark: #e67a00;
+  --secondary: #1e9e56;
+  --secondary-light: #2ebd6b;
+  --secondary-dark: #167a42;
+
+  --ivory: #fffff0;
+  --cream: #fdf5e6;
+  --soft-gray: #f5f5f5;
+  --medium-gray: #9ca3af;
+  --charcoal: #2d3436;
+  --dark: #1a1a2e;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Lato", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--charcoal);
+  background-color: var(--ivory);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--dark);
+}
+
+.highlight {
+  color: var(--primary);
+}
+
+/* ========================================
+   Header
+   ======================================== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  background: rgba(26, 26, 46, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  font-size: 2rem;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width var(--transition-normal);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: white;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cart-icon,
+.profile-icon {
+  position: relative;
+  color: white;
+  font-size: 1.25rem;
+  padding: 8px;
+  transition: all var(--transition-fast);
+}
+
+.cart-icon:hover,
+.profile-icon:hover {
+  color: var(--primary);
+}
+
+.cart-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background: var(--primary);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-login {
+  padding: 10px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+}
+
+.btn-login:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 2px;
+  background: white;
+}
+
+/* ========================================
+   Hero Banner
+   ======================================== */
+.hero-banner {
+  position: relative;
+  height: 500px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 46, 0.85),
+    rgba(45, 52, 54, 0.7)
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 10px 24px;
+  background: rgba(255, 138, 0, 0.2);
+  border: 1px solid rgba(255, 138, 0, 0.4);
+  color: var(--primary-light);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-banner h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: white;
+  margin-bottom: 16px;
+}
+
+.hero-banner p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+/* ========================================
+   Section Styles
+   ======================================== */
+.section-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 138, 0, 0.1),
+    rgba(255, 138, 0, 0.05)
+  );
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 138, 0, 0.2);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.section-header.light h2,
+.section-header.light p {
+  color: white;
+}
+
+.section-header h2 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 16px;
+}
+
+.section-header p {
+  color: var(--medium-gray);
+  font-size: 1.1rem;
+}
+
+/* ========================================
+   Story Section
+   ======================================== */
+.story-section {
+  padding: 100px 40px;
+  background: var(--ivory);
+}
+
+.story-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.story-image {
+  position: relative;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: 30px;
+  right: -30px;
+  padding: 24px 32px;
+  background: var(--primary);
+  color: white;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.experience-badge .years {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.experience-badge .text {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.story-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.story-content .lead {
+  font-size: 1.15rem;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.story-content p {
+  color: var(--medium-gray);
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.story-features {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.story-features .feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+.story-features .feature i {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-light), var(--primary));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================================
+   Philosophy Section
+   ======================================== */
+.philosophy-section {
+  padding: 100px 40px;
+  background: linear-gradient(135deg, var(--secondary-dark), var(--secondary));
+  position: relative;
+  overflow: hidden;
+}
+
+.philosophy-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    circle at 3px 3px,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 0
+  );
+  background-size: 50px 50px;
+}
+
+.philosophy-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.philosophy-section .section-badge {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.philosophy-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px 32px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all var(--transition-normal);
+}
+
+.philosophy-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.philosophy-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.philosophy-card h3 {
+  color: white;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.philosophy-card p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+/* ========================================
+   Chefs Section
+   ======================================== */
+.chefs-section {
+  padding: 100px 40px;
+  background: var(--cream);
+}
+
+.chefs-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.chefs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.chef-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.chef-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.chef-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.chef-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.chef-card:hover .chef-image img {
+  transform: scale(1.05);
+}
+
+.chef-social {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--transition-normal);
+}
+
+.chef-card:hover .chef-social {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.chef-social a {
+  width: 36px;
+  height: 36px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  transition: all var(--transition-fast);
+}
+
+.chef-social a:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.chef-info {
+  padding: 24px;
+}
+
+.chef-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.chef-title {
+  display: block;
+  color: var(--secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.chef-info p {
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.chef-awards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chef-awards span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+.chef-awards i {
+  color: var(--primary);
+}
+
+/* ========================================
+   Milestones Section
+   ======================================== */
+.milestones-section {
+  padding: 100px 40px;
+  background: var(--ivory);
+}
+
+.milestones-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 60px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  background: white;
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-marker span {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.timeline-content {
+  background: white;
+  padding: 28px 32px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  margin-left: 40px;
+  transition: all var(--transition-normal);
+}
+
+.timeline-content:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--dark);
+}
+
+.timeline-content p {
+  color: var(--medium-gray);
+  line-height: 1.7;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+.footer {
+  background: linear-gradient(135deg, var(--dark), #0f0f1a);
+  color: white;
+  position: relative;
+}
+
+.footer-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    circle at 2px 2px,
+    rgba(255, 138, 0, 0.1) 1px,
+    transparent 0
+  );
+  background-size: 30px 30px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 40px 30px;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 80px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand .logo {
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal);
+}
+
+.social-links a:hover {
+  background: var(--primary);
+  transform: translateY(-3px);
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.link-group h4 {
+  color: white;
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.link-group h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--primary);
+}
+
+.link-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-group a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+}
+
+.link-group a:hover {
+  color: var(--primary);
+  padding-left: 8px;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+}
+
+.contact-info i {
+  color: var(--primary);
+  width: 20px;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+
+.footer-bottom i {
+  color: var(--primary);
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 1200px) {
+  .chefs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .story-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .story-image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .experience-badge {
+    right: 20px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 400px;
+  }
+
+  .story-section,
+  .philosophy-section,
+  .chefs-section,
+  .milestones-section {
+    padding: 60px 20px;
+  }
+
+  .chefs-grid {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .timeline {
+    padding-left: 40px;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-marker {
+    left: -40px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .timeline-marker span {
+    font-size: 0.85rem;
+  }
+
+  .timeline-content {
+    margin-left: 20px;
+    padding: 20px 24px;
+  }
+
+  .footer-content {
+    padding: 60px 20px 20px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .link-group h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contact-info li {
+    justify-content: center;
+  }
+
+  .nav-container {
+    padding: 0 20px;
+  }
+}
